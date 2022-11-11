@@ -15,7 +15,7 @@ header{
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     color: white;
@@ -43,6 +43,13 @@ header{
     width: auto;
 }
 
+ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 li{
     display: inline;
     margin: 0 1vw;
@@ -57,10 +64,22 @@ select{
     background: none;
 }
 
+#botoes_header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+#icone_menu{
+    display: none;
+}
+
 button{
-    height: 60%;
+    height: 6vh;
     width: fit-content;
-    padding: 0 2vw;
+    padding: 2vh 1.5vw;
     background-color: #4F9CF9;
     color: white;
 
@@ -108,7 +127,6 @@ p{
 .botao{
     margin-top: 5vh;
     height: fit-content;
-    padding: 2vh 2vw;
 }
 
 .pagina2{
@@ -152,10 +170,130 @@ footer{
     color: white;
 }
 
-footer > div{
+nav{
+    margin: 0;
+    padding: 0;
+    justify-self: flex-start;
+}
+
+footer li{
+    font-size: 16px;
+}
+
+#redes_sociais{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 2vw;
+}
+
+@media (min-width: 769px) and (max-width: 1260px){
+    #botoes_header{
+        display: none;
+    }
+    
+    #icone_menu{
+        display: block;
+    }
+
+    .pagina1{
+        align-items: center;
+        text-align: center;
+    }
+
+    .pagina1 > h2{
+        font-size: 54px;
+    }
+
+    .pagina2{
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .pagina2 > div{
+        padding: 10% 0;
+        margin: auto;
+    }
+
+    #titulo{
+        font-size: 54px;
+    }
+
+    .pagina2 > img{
+        margin-bottom: 10%;
+    }
+
+    footer{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #redes_sociais{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    #botoes_header{
+        display: none;
+    }
+    
+    #icone_menu{
+        display: block;
+    }
+
+    .pagina1{
+        align-items: center;
+        text-align: center;
+    }
+
+    .pagina1 > h2{
+        font-size: 36px;
+    }
+
+    .pagina2{
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .pagina2 > div{
+        padding: 10% 0;
+        margin: auto;
+    }
+
+    #titulo{
+        font-size: 36px;
+    }
+
+    .pagina2 > img{
+        width: 50%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    footer{
+        height: auto;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer ul{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    #redes_sociais{
+        display: none;
+    }
 }

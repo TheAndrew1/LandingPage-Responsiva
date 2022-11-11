@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter';
+    display: inline;
 }
 
 body{
@@ -50,18 +51,11 @@ select{
     background: none;
 }
 
-#botoes_header{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-}
-
 button{
     height: 75%;
-    width: auto;
+    width: fit-content;
     padding: 0 2%;
+    width: fit-content;
     background-color: #4F9CF9;
     color: white;
 
@@ -72,17 +66,45 @@ button{
     font-weight: 500;
 }
 
+.seta{
+    margin-left: 1vw;
+}
+
 #botao_login{
     background-color: #FFE492;
     color: #043873;
 }
 
 .pagina1{
+    height: 90vh;
+
     background-image: url(img/imagem_fundo.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    color: white;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.pagina1 > p{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.pagina1 > button{
+    margin-top: 10vh;
+    height: fit-content;
+    padding: 1% 2%;
 }
 
 .pagina2{

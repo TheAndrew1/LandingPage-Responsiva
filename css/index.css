@@ -5,7 +5,101 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     font-family: 'Inter';
 }
 
+body{
+    background-color:#043873;
+}
+
+header{
+    height: 10vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+}
+
+#logo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    font-weight: 700;
+    font-size: 28px;
+
+    margin-right: 10%;
+}
+
+li{
+    display: inline;
+    margin: 0 1vw;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+select{
+    color: white;
+    border-style: none;
+    background: none;
+}
+
+#botoes_header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+button{
+    height: 75%;
+    width: auto;
+    padding: 0 2%;
+    background-color: #4F9CF9;
+    color: white;
+
+    border-style: none;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#botao_login{
+    background-color: #FFE492;
+    color: #043873;
+}
+
+.pagina1{
+    background-image: url(img/imagem_fundo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.pagina2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color: #DBDBDB;
+}
+
+footer{
+    height: 10vh;
+    margin: 0 10vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}

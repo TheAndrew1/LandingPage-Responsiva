@@ -2,19 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
-* {
+body{
+    background-color:#043873;
     margin: 0;
     padding: 0;
     font-family: 'Inter';
-    display: inline;
-}
-
-body{
-    background-color:#043873;
 }
 
 header{
     height: 10vh;
+    padding: 0 10%;
 
     display: flex;
     flex-flow: row nowrap;
@@ -31,10 +28,19 @@ header{
     align-items: center;
     gap: 5%;
 
+    
+    margin-right: 10%;
+}
+
+#logo > h2{
     font-weight: 700;
     font-size: 28px;
 
-    margin-right: 10%;
+}
+
+#logo > img{
+    height: 28px;
+    width: auto;
 }
 
 li{
@@ -52,10 +58,9 @@ select{
 }
 
 button{
-    height: 75%;
+    height: 60%;
     width: fit-content;
-    padding: 0 2%;
-    width: fit-content;
+    padding: 0 2vw;
     background-color: #4F9CF9;
     color: white;
 
@@ -77,12 +82,11 @@ button{
 
 .pagina1{
     height: 90vh;
+    padding: 0 10%;
 
-    background-image: url(img/imagem_fundo.png);
+    background-image: url(../img/imagem_fundo.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
-    background-size: cover;
 
     display: flex;
     flex-flow: column nowrap;
@@ -91,32 +95,54 @@ button{
     color: white;
 }
 
-h2{
+.pagina1 > h2{
     font-weight: 700;
     font-size: 64px;
 }
 
-.pagina1 > p{
+p{
     font-weight: 400;
     font-size: 18px;
 }
 
-.pagina1 > button{
-    margin-top: 10vh;
+.botao{
+    margin-top: 5vh;
     height: fit-content;
-    padding: 1% 2%;
+    padding: 2vh 2vw;
 }
 
 .pagina2{
+    height: 90vh;
+    padding: 0 10%;
+    background-color: white;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    background-color: #DBDBDB;
+    align-items: center;
+    
+}
+
+.pagina2 > img{
+    height: 50%;
+    width: auto;
+}
+
+#titulo{
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.pagina2 > div{
+    width: 50%;
+    height: auto;
+    justify-self: flex-end;
+    order: 1;
 }
 
 footer{
     height: 10vh;
-    margin: 0 10vw;
+    padding: 0 10%;
 
     display: flex;
     flex-flow: row nowrap;
@@ -124,4 +150,12 @@ footer{
     align-items: center;
 
     color: white;
+}
+
+footer > div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
 }
